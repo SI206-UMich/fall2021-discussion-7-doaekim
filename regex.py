@@ -31,8 +31,8 @@ def find_word(string_list):
     # find all the words that match the regular expression in each line
         match = re.findall(expression, line)
     # loop through the found words and add the words to your empty list 
-    for word in match:
-        word_list.append(word)
+        for word in match:
+            word_list.append(word)
     #return the list of all words that start with the letter B, E, or T
     return word_list
 
